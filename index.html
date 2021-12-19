@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prtfolio</title>
+    <link rel="shortcut icon" href="img/57819771.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="noScroll">
+    <div id="modalCarga">
+        <img src="img/loading-4.gif" alt="">
+    </div>
     <nav>
         <div class="containerTitle">
             <h2 class="conainerTitle__title">Prtfolio</h2>
         </div>
         <div class="containerMenu">
             <ul>
-                <li><a href="">Profile</a></li>
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Education</a></li>
                 <li><a href="">Extracurricular</a></li>
@@ -27,13 +31,13 @@
             </ul>
         </div>
     </nav>
-    <main>
+    <main id="projects">
         <div class="main__containerProfile">
             <div class="main__cotainerImg">
                 <img src="img/FB_IMG_1552204082716.jpg" alt="">
             </div>
             <div class="main__text">
-                <p>I am a computer systems engineering student at Instituto Tecnológico Superior del Sur de Guanajuato (ITSUR)specializing in web and mobile app development. I am an honest and responsible person who always looks out to overachieve myself, I also like to strive and add more knowledge constantly. I would like to be a full-stack developer</p>
+                <p>I am a computer systems engineering student at Instituto Tecnológico Superior del Sur de Guanajuato (ITSUR) specializing in web and mobile app development. I am an honest and responsible person who always looks out to overachieve myself, I also like to strive and add more knowledge constantly. I would like to be a full-stack developer</p>
             </div>
         </div>
     </main>
@@ -53,7 +57,16 @@
                 </div>
             </div>
             <div class="projects__containerProjects-project">
-                <h3 class="projects__containerProjects-project-title">Projecto 1</h3>
+                <h3 class="projects__containerProjects-project-title">Projecto 2</h3>
+                <div class="projects__containerProjects-project-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum facilis iure molestiae at corporis voluptatum quaerat quos incidunt numquam totam, laboriosam minus rem suscipit iste laudantium veniam animi eos nesciunt!
+                </div>
+                <div class="projects__containerProjects-project-footer">
+                    <button>Visitar</button>
+                </div>
+            </div>
+            <div class="projects__containerProjects-project">
+                <h3 class="projects__containerProjects-project-title">Projecto 2</h3>
                 <div class="projects__containerProjects-project-body">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum facilis iure molestiae at corporis voluptatum quaerat quos incidunt numquam totam, laboriosam minus rem suscipit iste laudantium veniam animi eos nesciunt!
                 </div>
@@ -63,5 +76,12 @@
             </div>
         </div>
     </div>
+    <div class="education">
+        <div class="education__containerTitle">
+            <h2>Education</h2>
+            <hr>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
 </body>
 </html>
