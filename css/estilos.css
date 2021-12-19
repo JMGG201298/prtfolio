@@ -102,15 +102,53 @@ main {
     color: white;
     text-align: left;
 }
+
 .education__containerTitle{
     margin-bottom: 70px;
     font-size: 30px;
+}
+.education__container-education-escuela{
+    background-color: white;
+    border-radius: 0 5px 5px 5px;
+    display: flex;
+    color: black;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.education__container-education-escuela-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.education__container-education-escuela-imagen img{
+    width: 120px;
+}
+.education__container-education-escuela-texto-title h4{
+    font-size: 25px;
+}
+.education__container-education-escuela-texto-text p{
+    font-size: 20px;
+    text-align: center;
+}
+.education__container-education-escuela-texto-date{
+    font-style: italic;
 }
 
 /****************/
 .containerMenu ul li a:hover{
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 1em cyan, 0 0 0.2em cyan;
+}
+.education__container-education-escuela:hover{
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+    transition: 0.25s margin  linear;
+    transition: 0.25s background  linear;
 }
 /*=============MODALES================*/
 #modalCarga{
