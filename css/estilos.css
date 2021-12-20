@@ -76,10 +76,10 @@ main {
 .projects{
     box-sizing: border-box;
     background-color: #14187A;
-    height: 100vh;
     padding: 100px;
     color: white;
     text-align: right;
+    min-height: 100vh;
 }
 .projects__containerProjects{
     display: flex;
@@ -95,9 +95,7 @@ main {
 /*=============EDUCATION==========================*/
 .education{
     width: 100%;
-    height: 100vh;
     background: #2832FA;
-    height: 100vh;
     padding: 100px;
     color: white;
     text-align: left;
@@ -152,6 +150,7 @@ main {
 }
 /*=============MODALES================*/
 #modalCarga{
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
