@@ -80,6 +80,8 @@ main {
     color: white;
     text-align: right;
     min-height: 100vh;
+    overflow-y: hidden;
+	overflow-x: hidden;
 }
 .projects__containerProjects{
     display: flex;
@@ -91,6 +93,7 @@ main {
     max-width: 400px;
     text-align: left;
     margin: 20px 20px;
+    
 }
 /*=============EDUCATION==========================*/
 .education{
