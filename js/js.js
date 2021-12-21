@@ -5,9 +5,9 @@ window.onload=()=>{
         modalCarga.className="noScroll-none";
         setInterval(()=>{
             modalCarga.style.display="none";
-        },1000);
+        },2000);
 
-    },3000);
+    },2000);
     window.sr=ScrollReveal();
     sr.reveal('.education__container-education-escuela',{
         duration: 2000,

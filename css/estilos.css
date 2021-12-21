@@ -137,6 +137,65 @@ main {
 .education__container-education-escuela-texto-date{
     font-style: italic;
 }
+/*================SKILLS=================================*/
+.skills{
+    background-color: #14187A;
+    color: white;
+}
+.skills__containerTitle{
+    width: 100%;
+    text-align: right;
+    padding: 100px 100px 0px 100px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+.containerSkills{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.lenguajes{
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 5px;
+    max-width: 800px;
+}
+.lenguajes-title{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 25px 25px 0px 25px;
+}
+.lenguajes-title p{
+    margin-bottom: 10px;
+}
+.skill{
+    
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.185);
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    opacity: 1;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 0.5s transform linear;
+}
+.skill:hover{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: 0.5s transform linear;
+    background-color: white;
+}
+.skill img{
+    width: 90px;
+}
+.lenguajesProgrammin{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
 /****************/
 .containerMenu ul li a:hover{
@@ -171,4 +230,88 @@ main {
     display: none;
     opacity: 0;
     transition: opacity 0.3s linear;
+}
+
+/*=====================================*/
+:root{
+    --border-fondo1:20px solid rgb(34, 231, 34,.3);
+    --border-fondo2:20px solid rgba(206, 11, 11, 0.3);
+    --border-fondo3:20px solid rgba(6, 22, 168, 0.3);
+    --border1:20px solid rgb(10, 214, 10);
+    --border2:20px solid rgb(204, 10, 4);
+    --border3:20px solid rgba(5, 21, 170);
+}
+.contenedor{
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+    transform: rotateY(180deg);
+    display: none;
+}
+.contenedor .progreso{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    top: 45px;
+    color: #fff;
+    text-align: center;
+}
+.contenedor .pro-1{
+    border: var(--border-fondo1);
+    color: rgb(10, 214, 10);
+}
+.contenedor .pro-2{
+    border: var(--border-fondo2);
+    color: rgb(204, 10, 4);
+}
+.contenedor .pro-3{
+    border: var(--border-fondo3);
+    color: rgba(5, 21, 170);
+}
+.progreso h1{
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+}
+.progreso h2{
+    font-size: 11px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    left: 0;
+}
+.progreso .circle{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    transform: rotate(-135deg);
+}
+.circle1{
+    border-top: var(--border1);
+    border-left: var(--border1);
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    animation:  rotar1 1s linear forwards;
+    animation-delay: 1s;
+}
+@keyframes rotar1{
+    100%{
+        transform: rotate(-25deg);
+    }
+}
+@keyframes rotar2{
+    100%{
+        transform: rotate(-85deg);
+    }
+}
+@keyframes rotar3{
+    100%{
+        transform: rotate(25deg);
+    }
 }
